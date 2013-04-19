@@ -1,0 +1,135 @@
+ul.topnav {
+    list-style: none;
+    padding: 0 20px;    
+    margin: 0;
+    float: left;
+    width: 202px;
+    background: #222;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+}
+ul.topnav li {
+    float: left;
+    margin: 0;  
+    padding: 0 15px 0 0;
+    position: relative; /*--Declare X and Y axis base for sub navigation--*/
+}
+ul.topnav li a{
+    padding: 10px 5px;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    float: left;
+    font-family: Sans-Serif;
+}
+
+li.button {
+    width: 50px !important;
+    padding-right: 5px !important;
+}
+/*ul.topnav li a:hover{
+    background: url(topnav_hover.gif) no-repeat center top;
+}*/
+
+ul.topnav li span { /*--Drop down trigger styles--*/
+    width: 25px;
+    height: 30px;
+    border-left: 1px solid #111;
+    position: relative;
+    left: 20px; 
+    bottom: -5px;  
+    float: right;
+    background: url(images/subnav_btn.gif) no-repeat center top;
+}
+
+ul.topnav li span:hover {
+    background-color: #fff;
+    border-radius: 4px 4px 0px 0px;
+    -webkit-border-radius: 4px 4px 0px 0px;
+    -moz-border-radius: 4px 4px 0px 0px;
+    position: relative;
+    bottom: -8px;
+}
+
+ul.topnav li span.subhover {
+    /*--Hover effect for trigger--*/
+    background-position: 
+    center; cursor: pointer;
+} 
+
+ul.topnav li ul.subnav {
+    list-style: none;
+    position: absolute; /*--Important - Keeps subnav from affecting main navigation flow--*/
+    right: -37px; top: 35px;
+    margin: 0; padding: 0;
+    display: none;
+    float: right;
+    width: 300px;
+}
+ul.topnav li ul.subnav li{
+    margin: 0; padding: 0;
+    clear: both;
+    width: 260px;
+}
+
+.last {
+    border-radius: 0px 0px 12px 12px !important;
+    -webkit-border-radius: 0px 0px 12px 12px !important;
+    -moz-border-radius: 0px 0px 12px 12px !important;
+}
+
+.middle {
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
+}
+
+.first {
+    border-radius: 12px 12px 0px 0px !important;
+    -moz-border-radius: 12px 12px 0px 0px !important!;
+    -webkit-border-radius: 12px 12px 0px 0px !important;
+}
+
+html ul.topnav li ul.subnav li a {
+    float: left;
+    width: 260px;
+    background: #fff;
+    padding-left: 20px;
+    color: #6B0458;
+    border-top: 1px solid #838485; /*--Create bevel effect--*/
+}
+
+html ul.topnav li ul.subnav li a:hover { /*--Hover effect for subnav links--*/
+    background: #fff; 
+    font-weight: normal;
+    color: #6B0458;
+}
+
+/* dropdown */
+
+ul.gradient {
+    background-image: linear-gradient(bottom, rgb(131,25,89) 15%, rgb(150,36,104) 58%, rgb(171,48,122) 79%);
+    background-image: -o-linear-gradient(bottom, rgb(131,25,89) 15%, rgb(150,36,104) 58%, rgb(171,48,122) 79%);
+    background-image: -moz-linear-gradient(bottom, rgb(131,25,89) 15%, rgb(150,36,104) 58%, rgb(171,48,122) 79%);
+    background-image: -webkit-linear-gradient(bottom, rgb(131,25,89) 15%, rgb(150,36,104) 58%, rgb(171,48,122) 79%);
+    background-image: -ms-linear-gradient(bottom, rgb(131,25,89) 15%, rgb(150,36,104) 58%, rgb(171,48,122) 79%);
+
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.15, rgb(131,25,89)),
+        color-stop(0.58, rgb(150,36,104)),
+        color-stop(0.79, rgb(171,48,122))
+    );
+}
+
+body {
+    background-color: #18BADE;
+}
+
+div {
+    float: right;
+}
